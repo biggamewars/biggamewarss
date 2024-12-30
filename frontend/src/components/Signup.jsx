@@ -35,7 +35,7 @@ const Signup = () => {
   const handleOtpVerification = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://gamingarena-swet.onrender.com/verify-otp', { email, otp });
+      const response = await axios.post('https://biggamewarss.onrender.com/verify-otp', { email, otp });
       alert(response.data.message); 
       navigate('/login');
     } catch (error) {
