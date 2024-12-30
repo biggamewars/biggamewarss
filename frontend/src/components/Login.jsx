@@ -18,7 +18,7 @@ const Login = () => {
       };
   
       const response = await axios.post(
-        "https://gamingarena-swet.onrender.com/login",
+        "https://biggamewarss.onrender.com/login",
         { email, password },
         config
       );
