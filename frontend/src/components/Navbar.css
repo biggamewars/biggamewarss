@@ -1,0 +1,393 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #0F0C29, #302B63, #24243E);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  .navbar-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .logo{
+    width: 256px;
+    height: 250px;
+    position: relative;
+    top: -103px;
+    left: -400px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    transition: all 0.4s ease;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .nav-links li a:hover {
+    color: #00D8FF;
+    text-shadow: 0 0 5px #00D8FF, 0 0 15px #00D8FF;
+  }
+  .nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-username {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 216, 255, 0.8);
+  }
+  .profile-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(15, 12, 41, 0.95);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+  .profile-menu p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #00D8FF;
+  }
+  .profile-options {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .profile-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .profile-option:hover {
+    transform: scale(1.2);
+    border-color: #00D8FF;
+  }
+  .profile-icon-container {
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; /* Cyberpunk-style font */
+  }
+  .profile-menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #0ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff, inset 0 0 5px #0ff;
+  }
+  .cyberpunk-theme .profile-menu-option {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    color: #0ff;
+    background: #222;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .cyberpunk-theme .profile-menu-option:hover {
+    background: #0ff;
+    color: #111;
+    text-shadow: 0 0 10px #0ff;
+  }
+  .profile-icon-container {
+    cursor: pointer;
+  }
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.3s;
+  }
+  .profile-icon:hover {
+    transform: scale(1.1);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .login-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .logo{
+    width: 236px;
+    height: 250px;
+    position: relative;
+    top: -103px;
+    left: -55px;
+  }
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #00D8FF;
+    box-shadow: 0 0 10px rgba(0, 216, 255, 0.8);
+    transition: transform 0.3s ease;
+  }
+  .profile-icon:hover {
+    transform: scale(1.1);
+  }
+  .logout-button {
+    background-color: #FF004C;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .logout-button:hover {
+    background-color: #FF326A;
+    box-shadow: 0 0 10px #FF326A, 0 0 20px #FF326A;
+  }
+  .menu-button {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: rgb(51, 216, 0);
+    position: relative;
+    z-index: 10; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-button.open {
+    color: #ff4f4f; 
+    transform: rotate(90deg); 
+  }
+  
+  .menu-button i {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu-button i.fa-bars {
+    opacity: 1;
+  }
+  
+  .menu-button.open i.fa-bars {
+    opacity: 0; 
+    transform: rotate(-90deg);
+  }
+  
+  .menu-button i.fa-times {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transform: rotate(90deg); 
+  }
+  .menu-button.open i.fa-times {
+    opacity: 1;
+    transform: rotate(0);
+  }
+  
+  .logo2{
+      display: none;
+    }
+
+  @media (max-width: 1024px) {
+    .logo {
+      display: none;
+    }
+    .logo2 {
+      display: none;
+    }
+    .menu-button{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .menu-button.open .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .menu-button.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-button.open .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu-button.open:hover{
+      background: transparent;
+      box-shadow: none;
+    }
+    .menu-button:hover{
+      background: transparent;
+      box-shadow: none;
+    }
+    .menu-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      left: -300px;
+      width: 30px; 
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(15, 12, 41, 0.9);
+      flex-direction: column;
+      padding: 1rem;
+      visibility: hidden;
+      transform: translateX(100%);
+    }
+    .nav-links.active {
+      visibility: visible;
+      transform: translateX(0);
+    }
+    .navbar-logo {
+      width: 20px;
+      height: 20px;
+    }
+    .logo2 {
+      display: block;
+      position: relative;
+      width: 72px;
+      top: -25px;
+      left: 303px;
+    }
+    .bar {
+      width: 100%;
+      height: 4px;
+      position: relative;
+      left: -277px;
+      background-color: #19ff13;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    @media (max-width: 469px) {
+      .logo {
+        display: none;
+      }
+      .logo2 {
+        display: block;
+        position: relative;
+        width: 72px;
+        top: -19px;
+        left: 10px;
+    }
+    .menu-button{
+      position: absolute;
+      left: 292px;
+    } 
+}
+    @media (max-width: 406px){
+      .logo {
+        display: none;
+      }
+      .logo2 {
+        display: block;
+        position: relative;
+        width: 57px;
+        top: -13px;
+        left: 8px;
+      }
+      .menu-button{
+        position: absolute;
+        left: 242px;
+      }
+    }
+  }
+  @media (max-width: 321px){
+    .logo{
+      display: none;
+    }
+    .logo2 {
+      display: block;
+      position: relative;
+      width: 63px;
+      height: 54px;
+      top: -16px;
+      left: 5px;
+    }
+    .menu-button{
+      position: absolute;
+      left: 142px;
+    }
+  }
