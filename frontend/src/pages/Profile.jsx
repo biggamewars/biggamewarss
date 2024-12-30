@@ -30,7 +30,7 @@ const Profile = () => {
       };
 
       const response = await axios.get(
-        "https://gamingarena-swet.onrender.com/profile",
+        "https://biggamewarss.onrender.com/profile",
         config
       );
       const { name, email, matchesPlayed, moneyEarned } = response.data;
@@ -71,7 +71,7 @@ const Profile = () => {
       };
 
       await axios.put(
-        "https://gamingarena-swet.onrender.com/profile",
+        "https://biggamewarss.onrender.com/profile",
         { name: newName },
         config
       );
