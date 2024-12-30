@@ -25,7 +25,7 @@ const Navbar = () => {
           },
         };
 
-        const { data } = await axios.get('https://gamingarena-swet.onrender.com/profile', config);
+        const { data } = await axios.get('https://biggamewarss.onrender.com/profile', config);
         setUser(data.name);
         setProfilePicture(data.profilePicture || profilePicture); // Update profile picture if available
       } catch (err) {
