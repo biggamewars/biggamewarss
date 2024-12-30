@@ -20,7 +20,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('https://gamingarena-swet.onrender.com/register', {
+      const response = await axios.post('https://biggamewarss.onrender.com/register', {
         name,
         email,
         password,
