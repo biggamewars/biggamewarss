@@ -42,7 +42,7 @@ const Leaderboard = () => {
             <tr>
               <th>Rank</th>
               <th>Player</th>
-              <th>₹Prize</th>
+              <th>₹</th>
             </tr>
           </thead>
           <tbody>
