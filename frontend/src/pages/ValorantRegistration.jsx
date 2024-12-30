@@ -48,7 +48,7 @@ const ValorantRegistration = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post("https://gamingarena-swet.onrender.com/register/valorant", {
+      const response = await axios.post("https://biggamewarss.onrender.com/register/valorant", {
         username,
         email,
       });
