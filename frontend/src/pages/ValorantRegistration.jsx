@@ -48,7 +48,7 @@ const ValorantRegistration = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post("https://biggamewarss.onrender.com/register/valorant", {
+      const response = await axios.post("https://gamingarena-swet.onrender.com/register/valorant", {
         username,
         email,
       });
@@ -80,7 +80,7 @@ const ValorantRegistration = () => {
             <p>{slidesData[currentSlide].description}</p>
             <p><strong>Entry Fee:</strong> {slidesData[currentSlide].entryFee}</p>
             <p><strong>Prize:</strong> {slidesData[currentSlide].prize}</p>
-            <button className="join-button" onClick={handlesubmit}>JOIN NOW</button>
+            <button className="join-button" onClick={handlesubmit}><a href="https://zerotize.in/paynow?i=QEJfsl32">JOIN NOW</a></button>
           </div>
         </div>
       </div>
