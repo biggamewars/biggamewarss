@@ -44,18 +44,16 @@
       if (selectSound) selectSound.play(); 
     };
 
-    const handleRegister = async () => {
-      try {
-        const response = await axios.post("https://biggamewarss.onrender.com/register/bgmi", {
-          username,
-          email,
-        });
-        alert(response.data.message);
-        navigate("/"); 
-      } catch (err) {
-        console.error("Error registering for BGMI:", err);
-        alert("Error registering for BGMI");
+    const handleJoinClick = () => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("You need to log in to join this event!");
+        navigate("/login")
+        return;
       }
+  
+      if (selectSound) selectSound.play(); 
+      window.location.href = "https://zerotize.in/paynow?i=QEJfsl32";
     };
 
     return (
@@ -78,7 +76,7 @@
                 <h3>{slide.title}</h3>
                 <p>{slide.description}</p>
                 <button className="bgmi-join-button" onClick={handleJoinClick}>
-                  <a href="https://zerotize.in/paynow?i=QEJfsl32">JOIN NOW</a>
+                  JOIN NOW
                 </button>
               </div>
             </div>
