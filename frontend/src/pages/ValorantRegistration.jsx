@@ -46,19 +46,16 @@ const ValorantRegistration = () => {
     return () => clearInterval(slideInterval);
   }, []);
 
-  const handleRegister = async () => {
-    try {
-      const response = await axios.post("https://biggamewarss.onrender.com/register/valorant", {
-        username,
-        email,
-      });
-      alert(response.data.message);
-      navigate("/"); 
-    } catch (err) {
-      console.error("Error registering for Valorant:", err);
-      alert("Error registering for Valorant");
-    }
-  };
+    const handleJoinClick = () => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("You need to log in to join this event!");
+        navigate("/login")
+        return;
+      }
+  
+      window.location.href = "https://zerotize.in/paynow?i=QEJfsl32";
+    };
 
   return (
     <section className="slider-container">
@@ -80,7 +77,7 @@ const ValorantRegistration = () => {
             <p>{slidesData[currentSlide].description}</p>
             <p><strong>Entry Fee:</strong> {slidesData[currentSlide].entryFee}</p>
             <p><strong>Prize:</strong> {slidesData[currentSlide].prize}</p>
-            <button className="join-button" onClick={handlesubmit}><a href="https://zerotize.in/paynow?i=QEJfsl32">JOIN NOW</a></button>
+            <button className="join-button" onClick={handleJoinClick}>JOIN NOW</button>
           </div>
         </div>
       </div>
