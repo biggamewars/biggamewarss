@@ -40,10 +40,19 @@
       showSlide(newIndex);
     };
 
-    const handleJoinClick = () => {
-      if (selectSound) selectSound.play(); 
+    const handleRegister = async () => {
+      try {
+        const response = await axios.post("https://biggamewarss.onrender.com/register/bgmi", {
+          username,
+          email,
+        });
+        alert(response.data.message);
+        navigate("/"); 
+      } catch (err) {
+        console.error("Error registering for BGMI:", err);
+        alert("Error registering for BGMI");
+      }
     };
-
     const handleJoinClick = () => {
       const token = localStorage.getItem("token");
       if (!token) {
