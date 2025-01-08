@@ -17,7 +17,7 @@ const PaymentPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/payment', {
+      const response = await fetch('https://biggamewarss.onrender.com/payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
