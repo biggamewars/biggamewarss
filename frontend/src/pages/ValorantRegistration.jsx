@@ -46,16 +46,16 @@ const ValorantRegistration = () => {
     return () => clearInterval(slideInterval);
   }, []);
 
-    const handleJoinClick = () => {
-      const token = localStorage.getItem("token");
-      if (!token) {
-        alert("You need to log in to join this event!");
-        navigate("/login")
-        return;
-      }
-  
-      window.location.href = "https://zerotize.in/paynow?i=QEJfsl32";
-    };
+  const handleJoinClick = () => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      alert("You need to log in to join this event!");
+      navigate("/login")
+      return;
+    }
+    navigate("/registerForms"); 
+  };
+
 
   return (
     <section className="slider-container">
