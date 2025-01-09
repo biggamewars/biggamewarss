@@ -17,7 +17,7 @@ const PaymentPagetwo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://gamingarena-swet.onrender.com/tdm-payment', {
+      const response = await fetch('https://biggamewarss.onrender.com/tdm-payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
